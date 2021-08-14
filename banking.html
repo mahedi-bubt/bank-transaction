@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16 text-purple-800 font-bold">Bank Transaction</h1>
+    </header>
+    <main class=" w-3/4 mx-auto">
+        <!-- Transaction Section -->
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 text-white">
+                <div class="bg-green-600 p-6 rounded">
+                    <h2 class="text-2xl">Deposite</h2>
+                    <h4 id="" class="text-xl inline mr-2">$$</h4>
+                    <h4 id="show-deposite-balance" class="text-xl inline">00</h4>
+                </div>
+                <div class="bg-yellow-600 p-6 rounded">
+                    <h2 class="text-2xl">Withdraw</h2>
+                    <h4 id="" class="text-xl inline mr-2">$$</h4>
+                    <h4 id="show-withdraw-balance" class="text-xl inline">00</h4>
+                </div>
+                <div class="bg-pink-600 p-6 rounded">
+                    <h2 class="text-2xl">Current Balance</h2>
+                    <h4 id="" class="text-xl inline mr-2">$$</h4>
+                    <h4 id="show-current-balance" class="text-xl inline">00</h4>
+                </div>
+            </div>
+        </section>
+        <!-- Withdraw and Deposite -->
+        <section>
+            <div class="grid grid-cols-3 gap-4">
+                <!-- Deposite Part -->
+                <div class="bg-gray-600 p-6 rounded mt-2">
+                    <h2 class="text-2xl mb-4  text-white font-medium">Please Deposite</h2>
+                    <div>
+                        <input id="deposite-amount-field" class="block w-3/4 mb-6 p-2 rounded" type="text" name=""
+                            placeholder="$ Deposite Amount">
+                        <button id="btn-deposite" class="bg-green-800 text-white p-2 w-32 rounded-lg 
+                             text-xl">Deposite</button>
+                    </div>
+                </div>
+                <!-- Withdraw Part -->
+                <div class="bg-gray-600 p-6 rounded mt-2">
+                    <h2 class="text-2xl mb-4  text-white font-medium">Please Withdraw</h2>
+                    <div>
+                        <input id="withdraw-amount-field" class="block w-3/4 mb-6 p-2 rounded" type="text" name=""
+                            placeholder="$ Withdraw Amount">
+                        <button id="btn-withdraw" class="bg-green-800 text-white p-2 w-32 rounded-lg 
+                             text-xl">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/transaction.js"></script>
+</body>
+
+</html>
